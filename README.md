@@ -22,3 +22,6 @@ npm install react-router-dom localforage match-sorter sort-by
 npm install -D sass
 ```
 <br>
+
+## Mais em breve...
+Documentação ainda sendo feita!
