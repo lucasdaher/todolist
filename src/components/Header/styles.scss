@@ -1,0 +1,38 @@
+@use '../../sass/colors'as*;
+@use '../../sass/mixins'as*;
+
+header {
+  width: 100%;
+  height: 74px;
+  background: $blue;
+  color: $white;
+
+  padding: 29px 61px 7px;
+  @include flex($justify: flex-start);
+}
+
+.header__menu {
+  @include flex($justify: flex-start, $gap: 38px);
+
+  &__option {
+    list-style: none;
+    color: $white;
+    font-size: 25px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  &__selected {
+    background: $white;
+    color: $blue;
+    padding: 9px 38px 5.5px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__option:hover,
+  &__selected:hover {
+    opacity: .9;
+  }
+}

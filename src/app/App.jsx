@@ -3,8 +3,15 @@ import React from "react";
 // Style
 import "./styles.scss";
 
+// Components
+import Header from "../components/Header/Header";
+
 const App = () => {
-  return <div className="app"></div>;
+  return (
+    <div className="app">
+      <Header />
+    </div>
+  );
 };
 
 export default App;
