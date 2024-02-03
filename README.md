@@ -1,5 +1,5 @@
 # Todo List
-Neste repositório você encontrará a resolução do **desafio nº 3** da **Escola DNC**. O objetivo deste desafio é **construir uma interface utilizando React.JS**.
+Neste repositório você encontrará a resolução do **desafio nº 3 e 4** da **Escola DNC**. O objetivo do terceiro desafio é **construir uma interface utilizando React.JS** e o objetivo do quarto desafio é **criar um repositório e garantir acesso fácil ao projeto do desafio nº 3**.
 
 ## Setup
 Para executar o setup do projeto, você precisará do [Node.JS](https://nodejs.org/) para instalar as dependências utilizando o comando `npm` no seu terminal.
