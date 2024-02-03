@@ -1,0 +1,14 @@
+@use '../../sass/colors'as*;
+@use '../../sass/mixins'as*;
+
+.title {
+  &__heading {
+    @include flex;
+    width: 100%;
+    margin: 145px auto 126px;
+
+    color: $white;
+    font-size: 40px;
+    font-weight: 600;
+  }
+}
