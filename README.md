@@ -22,11 +22,7 @@ npm install react-router-dom localforage match-sorter sort-by
 npm install -D sass
 ```
 
-
 ## Modal
-Detalhes sobre o modal ainda não estão disponíveis...
-
-## Todos
 Detalhes sobre o modal ainda não estão disponíveis...
 
 ## Versões
