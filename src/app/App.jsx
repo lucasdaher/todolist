@@ -16,6 +16,7 @@ const App = () => {
 
   const handleOpenModal = () => {
     if (hideModal) {
+      setModalType("adicionar");
       setHideModal(false);
     } else {
       setHideModal(true);
@@ -28,16 +29,7 @@ const App = () => {
 
       <Title text="Otimize seu tempo e se organize com o nosso planejador diário." />
 
-      <button type="button" onClick={handleOpenModal}>
-        Abrir Modal
-      </button>
-
-      <Modal
-        action="excluir"
-        hideModal={hideModal}
-        desc={desc}
-        modalType={modalType}
-      />
+      <Modal hideModal={hideModal} desc={desc} modalType={modalType} />
     </div>
   );
 };
