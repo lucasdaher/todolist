@@ -1,0 +1,94 @@
+@use '../../sass/mixins'as*;
+@use '../../sass/colors'as*;
+@use '../../sass/fontFamily'as*;
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  @include flex($flex-dir: column);
+  background: $white;
+  width: 758px;
+  min-height: 436px;
+  max-height: 436px;
+  height: auto;
+
+  margin: 0 auto;
+  border-radius: 10px;
+
+  transition: all 0.2s;
+
+  &__title {
+    color: $black;
+    font-family: $raleway;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    margin-bottom: 58px;
+  }
+
+  &__desc {
+    color: $black;
+    font-family: $raleway;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-bottom: 85px;
+  }
+
+  &__actions {
+    @include flex($gap: 20px);
+
+    &__deny {
+      width: 268px;
+      height: 77px;
+      background: $blue;
+      border: 0;
+      border-radius: 10px;
+
+      color: $white;
+      font-family: $raleway;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    &__deny:hover {
+      opacity: .8;
+      transform: translateY(-6%);
+    }
+
+    &__accept {
+      width: 268px;
+      height: 77px;
+      background: $white;
+      border: 1px solid $black;
+      border-radius: 10px;
+
+      color: $background-color;
+      font-family: $raleway;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    &__accept:hover {
+      border: 1px solid $blue;
+      color: $blue;
+      transform: translateY(-6%);
+    }
+  }
+}
