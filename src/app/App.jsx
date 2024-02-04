@@ -14,10 +14,20 @@ const App = () => {
 
   const [desc, setDesc] = useState("Colocar as descrições da tarefa aqui.");
 
-  const handleOpenModal = () => {
+  const handleDescModal = (description) => {
+    if (!hideModal) {
+      setDesc(description);
+    } else {
+      setDesc("Um erro foi encontrado, recarregue a página!");
+    }
+  };
+
+  const handleOpenModal = (description) => {
     if (hideModal) {
       setModalType("adicionar");
       setHideModal(false);
+
+      handleDescModal(description);
     } else {
       setHideModal(true);
     }
