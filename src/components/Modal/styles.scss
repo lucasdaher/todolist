@@ -14,10 +14,16 @@
   max-height: 436px;
   height: auto;
 
-  margin: 0 auto;
+
+  position: fixed;
+  top: 329px;
+  left: 50%;
+  transform: translate(-50%);
+
   border-radius: 10px;
 
   transition: all 0.2s;
+  z-index: 1;
 
   &__title {
     color: $black;

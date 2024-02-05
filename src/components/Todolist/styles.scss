@@ -1,0 +1,96 @@
+@use '../../sass/mixins'as*;
+@use '../../sass/colors'as*;
+@use '../../sass/fontFamily'as*;
+
+.todolist {
+  width: 100%;
+  @include flex;
+
+  table {
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    font-family: $raleway;
+    color: $white;
+
+    thead tr,
+    tbody tr {
+      @include flex($justify: space-around, $align: center);
+    }
+
+    thead::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 6px;
+      background: $light-gray;
+      position: relative;
+      top: 42px;
+    }
+
+    tbody {
+      position: relative;
+      top: 73px;
+    }
+
+    th,
+    td {
+      width: 200px;
+    }
+
+    td {
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    input {
+      background: $background-color;
+      border: 0;
+      outline: none;
+      color: $light-gray;
+
+      font-family: $raleway;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    input::placeholder {
+      @include todoInputPlaceholder;
+    }
+  }
+}
+
+.todolist__table {
+  &__left {
+    text-align: left;
+
+    @include tableTitle;
+  }
+
+  &__center {
+    text-align: center;
+
+    @include tableTitle;
+  }
+
+  &__right {
+    text-align: right;
+
+    @include flex($flex-dir: row, $gap: 8px, $justify: flex-end);
+    @include tableTitle;
+
+    .todolist__create__button {
+      background: transparent;
+      border: 0;
+      font-size: 1.6rem;
+      padding: 0 2px;
+      color: $white;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .todolist__create__button:hover {
+      transform: translateY(-6%);
+    }
+  }
+}
