@@ -1,7 +1,28 @@
+@use '../sass/fontFamily'as*;
+@use '../sass/colors'as*;
+
 @mixin flex($display: flex, $flex-dir: row, $justify: center, $align: center, $gap: 0px) {
   display: $display;
   flex-direction: $flex-dir;
   justify-content: $justify;
   align-items: $align;
   gap: $gap;
+}
+
+@mixin tableTitle {
+  color: $white;
+  font-family: $raleway;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@mixin todoInputPlaceholder {
+  color: $white;
+  font-family: $raleway;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
 }

@@ -1,0 +1,19 @@
+.edit__button,
+.remove__button {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.edit__button:hover,
+.remove__button:hover {
+  transform: translateY(-6%);
+}
+
+.checkbox__button {
+  border: 0;
+  background: transparent;
+
+  &__img {
+    cursor: pointer;
+  }
+}
