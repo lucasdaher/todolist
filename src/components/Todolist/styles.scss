@@ -7,7 +7,7 @@
   @include flex;
 
   table {
-    width: 50%;
+    width: 70%;
     margin: auto;
     margin-top: 100px;
     font-family: $raleway;
@@ -33,14 +33,22 @@
       top: 73px;
     }
 
-    th,
-    td {
-      width: 200px;
+    th {
+      width: 320px;
     }
 
     td {
+      max-width: 320px;
+      width: 100%;
+
+      max-height: 50px;
+      height: auto;
+
       margin-bottom: 20px;
       font-weight: 400;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     input {
@@ -63,7 +71,6 @@
 .todolist__table {
   &__left {
     text-align: left;
-
     @include tableTitle;
   }
 
@@ -76,7 +83,7 @@
   &__right {
     text-align: right;
 
-    @include flex($flex-dir: row, $gap: 8px, $justify: flex-end);
+    @include flex($flex-dir: row, $gap: 12px, $justify: flex-end);
     @include tableTitle;
 
     .todolist__create__button {

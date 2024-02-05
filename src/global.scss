@@ -11,3 +11,7 @@
 body {
   background: $background-color;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

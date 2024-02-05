@@ -4,7 +4,7 @@ import "./styles.scss";
 
 const Modal = (props) => {
   const [todoInput, setTodoInput] = useState(
-    props.selectedTodo ? props.selectedTodo.name : ""
+    props.todoData ? props.todoData.name : ""
   );
 
   const onDeny = () => {
@@ -19,7 +19,7 @@ const Modal = (props) => {
         props.closeModal(true, todoInput);
       }
     } else {
-      props.closeModal(false);
+      props.closeModal(true);
     }
   };
 
@@ -38,10 +38,11 @@ const Modal = (props) => {
         {props.edit ? (
           <>
             <p className="modal__desc">
-              Colocar as descrições das tarefas aqui.
+              Digite no campo abaixo o novo nome da tarefa
             </p>
             <div className="modal__input__container">
               <input
+                className="modal__input"
                 type="text"
                 value={todoInput}
                 placeholder="Editar tarefa..."
@@ -50,7 +51,7 @@ const Modal = (props) => {
             </div>
           </>
         ) : (
-          <div className="todo__name">{props.selectedTodo}</div>
+          <p className="modal__desc">{props.todoData.name}</p>
         )}
 
         <div className="modal__actions">

@@ -37,6 +37,10 @@ const Todolist = () => {
       if (edit) {
         const newTodo = [...todo];
         newTodo[todoIndex].name = newTodoName;
+      } else {
+        const newTodo = [...todo];
+        newTodo.splice(todoIndex, 1);
+        setTodo(newTodo);
       }
     }
   };
@@ -61,6 +65,12 @@ const Todolist = () => {
     setTodoInput(e.target.value);
   };
 
+  const handleTodoInputKey = (e) => {
+    if (e.key === "Enter") {
+      todoCreate();
+    }
+  };
+
   return (
     <div className="todolist">
       {visible && (
@@ -70,6 +80,7 @@ const Todolist = () => {
           edit={edit}
           todoIndex={todoIndex}
           closeModal={closeModal}
+          todoData={todo[todoIndex]}
         />
       )}
       <table>
@@ -105,6 +116,7 @@ const Todolist = () => {
                 value={todoInput}
                 placeholder="Nova Tarefa..."
                 onChange={handleTodoInput}
+                onKeyUp={handleTodoInputKey}
               />
             </td>
             <td className="todolist__table__center"></td>
