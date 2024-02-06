@@ -1,5 +1,5 @@
 # Todo List
-Neste repositório você encontrará a resolução do **desafio nº 3 e 4** da **Escola DNC**. O objetivo do terceiro desafio é **construir uma interface utilizando React.JS** e o objetivo do quarto desafio é **criar um repositório e garantir acesso fácil ao projeto do desafio nº 3**.
+Neste repositório você encontrará a resolução do **desafio nº4** da **Escola DNC**. O objetivo do quarto desafio é **criar um repositório e garantir acesso fácil ao projeto do desafio nº3**.
 
 ## Setup
 Para executar o setup do projeto, você precisará do [Node.JS](https://nodejs.org/) para instalar as dependências utilizando o comando `npm` no seu terminal.
@@ -22,8 +22,14 @@ npm install react-router-dom localforage match-sorter sort-by
 npm install -D sass
 ```
 
-## Modal
-Detalhes sobre o modal ainda não estão disponíveis...
-
 ## Versões
-- Correção realizada nos estados do modal.
+- **v1.0.0** Primeira versão do projeto com as funcionalidades completas.
+
+## Tecnologias Utilizadas
+- React.JS
+- React Router
+- Vite
+- SASS
+
+## Prévia
+[Ainda não está disponível...](https://)
