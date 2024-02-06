@@ -23,7 +23,7 @@ npm install -D sass
 ```
 
 ## Versões
-- **v1.0.0** Primeira versão do projeto com as funcionalidades completas.
+- [**v1.0.0**](https://github.com/lucasdaher/todolist/releases/tag/todolist)
 
 ## Tecnologias Utilizadas
 - React.JS
@@ -32,4 +32,5 @@ npm install -D sass
 - SASS
 
 ## Prévia
-[Ainda não está disponível...](https://)
+Você pode testar a aplicação e todas as suas funcionalidades!
+[Clique aqui para ser redirecionado](https://lucasdaher-todolist.vercel.app/)
