@@ -36,3 +36,23 @@ header {
     opacity: .9;
   }
 }
+
+@media screen and (max-width: 500px) {
+  header {
+    padding: 36px 100px 7px 61px;
+  }
+
+  .header__menu__option {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header {
+    padding: 36px 12px 2px;
+  }
+
+  .header__menu__option {
+    font-size: 16px;
+  }
+}

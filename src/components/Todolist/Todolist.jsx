@@ -112,6 +112,7 @@ const Todolist = () => {
           <tr>
             <td className="todolist__table__left">
               <input
+                id="todolist__create__input"
                 type="text"
                 value={todoInput}
                 placeholder="Nova Tarefa..."
